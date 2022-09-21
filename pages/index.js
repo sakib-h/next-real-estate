@@ -37,7 +37,7 @@ const Banner = ({
 	</Flex>
 );
 export default function Home({ propertiesForSale, propertiesForRent }) {
-	console.log(propertiesForSale, propertiesForRent);
+
 	return (
 		<Box>
 			<Banner

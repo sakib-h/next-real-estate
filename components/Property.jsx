@@ -13,17 +13,9 @@ const Property = ({ property }) => {
 		rentFrequency,
 		rooms,
 		title,
-		address,
-		city,
-		state,
-		country,
-		beds,
 		baths,
 		area,
-		verified,
-		agent,
 		agency,
-		id,
 		externalId,
 		isVerified,
 	} = property;
@@ -69,11 +61,14 @@ const Property = ({ property }) => {
 						justifyContent="space-between"
 						w="250px"
 						color="blue.400">
-						{rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill/>
+						{rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)}{" "}
+						sqft <BsGridFill />
 					</Flex>
-                    <Text fontSize="lg">
-                        {title.length > 30 ? `${title.substring(0,30)}...` : title}
-                    </Text>
+					<Text fontSize="lg">
+						{title.length > 30
+							? `${title.substring(0, 30)}...`
+							: title}
+					</Text>
 				</Box>
 			</Flex>
 		</Link>
