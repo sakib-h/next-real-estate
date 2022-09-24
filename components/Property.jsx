@@ -16,12 +16,12 @@ const Property = ({ property }) => {
 		baths,
 		area,
 		agency,
-		externalId,
+		externalID,
 		isVerified,
 	} = property;
 
 	return (
-		<Link href={`/property/${externalId}`} passHref>
+		<Link href={`/property/${externalID}`} passHref>
 			<Flex
 				flexWrap="wrap"
 				w="420px"
